@@ -1,0 +1,137 @@
+@CHARSET "UTF-8";
+
+/* input[type="button" i]:disabled, input[type="submit" i]:disabled, input[type="reset" i]:disabled, input[type="file" i]:disabled::-webkit-file-upload-button, button:disabled, select:disabled, keygen:disabled, optgroup:disabled, option:disabled, select[disabled] > option { */
+/* 	text-decoration: line-through; */
+/* } */
+
+*{font-family: "Lato-regular", NanumBarunGothic, sans-serif;}
+
+.lineThrough{
+	text-decoration: line-through;
+}
+
+a.likeBtn{
+  font-size: 13px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  font-weight: normal;
+	text-align: center;
+	background-color: buttonface;
+	text-rendering: auto;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	margin: 0em 0em 0em 0em;
+}
+
+button.disabled, a.btn.disabled{opacity:0.5;filter: alpha(opacity=50);}
+
+.placeholder-warning::-webkit-input-placeholder{color:#d14401;}
+.placeholder-warning::-moz-placeholder{color:#d14401;}
+.placeholder-warning:-moz-placeholder{color:#d14401;}
+.placeholder-warning::-ms-input-placeholder{color:#d14401;}
+
+
+select:disabled{
+	text-decoration: line-through;
+}
+
+a:focus{outline:none}
+
+a{color:inherit}
+
+textarea{resize:none}
+
+pre{white-space:pre-wrap}
+
+.freemoa-text-ellipsis{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.freemoa-heightsize-force-fixed{
+	overflow-y:hidden;
+}
+
+.freemoa-inner-inline-block > *{
+	display:inline-block;
+}
+
+.projectTitle{max-width:315px}
+.projectTechs{height:22px}
+
+.freelancerTitle{max-width:230px}
+.portfoliotitle{max-width:269px}
+
+.cursor-pointer{cursor:pointer}
+
+.red, .warning{
+	color:red
+}
+
+.warning{color:red !important}
+
+.good{color:green !important}
+
+.btn-sel-box:before{
+	content:'理쒖떊��/�ㅻ옒�쒖닚'
+}
+
+.btn-sel-box.on:before{
+	content:'�ㅻ옒�쒖닚/理쒖떊��'
+}
+
+
+.OpenCloseTextToggleBtn::before{
+	content:"�쇱묠";
+}
+
+.OpenCloseTextToggleBtn.on::before{
+	content:"�リ린";
+}
+
+.focuesdtextarea-shownbutton-wrapper{position:relative}
+
+.textarea-focus-button-hide:focus{
+	padding-bottom:20px;
+}
+
+.textarea-focusout-hide{
+	position:absolute;
+	right:0;
+	bottom:0;
+	height:20px;
+}
+
+
+html > :not(body){
+	display:none !important;
+}
+
+svg.Nwagon_donut >g.foreground > g.donuts > circle + path.sector{display:none}
+
+#ui-datepicker-div{z-index:7777 !important}
+
+#freelancerListWrap .freelancerView2Yoso{display:none}
+#freelancerListWrap.view2 .freelancerView2Yoso{display:inline-block}
+#freelancerListWrap.view2 .freelancerView1Yoso{display:none}
+
+.myPageBadgeImage{width:68px;height:68px}
+.freelancerListBadgeImage{width:55px;height:55px}
+
+@media (max-height:643px){
+	.popupWrap.scrollForFewWindowSize{
+/* 		max-height:100%; */
+		top:0 !important;
+		bottom:0 !important;
+		margin-top:0 !important;
+		overflow-y:scroll;
+	}
+
+}
+
+iframe[name=google_conversion_frame],iframe[name=google_cookie_match_frame]{display:none}
